@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "epmaps-app",
+    "slug": "epmaps-app",
+    "scheme": "epmaps-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#101F36",
+        "foregroundImage": "./assets/icon.jpg"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.eli_borja.epmapsapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#101F36",
+          "image": "./assets/splash-icon.jpg",
+          "imageWidth": 250,
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Se requiere la cámara para respaldar consumos anómalos o daños.",
+          "recordAudioAndroid": false
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bebe8fae-67e6-4fed-be76-976b55179745"
+      }
+    }
+  }
+}
