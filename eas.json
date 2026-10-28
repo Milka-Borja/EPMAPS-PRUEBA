@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 26.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_MOCKAPI_URL":"https://6adfb1a38e42963c8d5e4b20.mockapi.io/",
+        "EXPO_PUBLIC_CLOUDINARY_UPLOAD_URL":"https://api.cloudinary.com/v1_1/djurgekjm/image/upload",
+        "EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET":"EPMAPS"
+
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
